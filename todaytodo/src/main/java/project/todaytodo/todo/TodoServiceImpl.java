@@ -7,6 +7,9 @@ public class TodoServiceImpl implements TodoService{
         todoRepository.save(todo);
     }
 
+    public void delete(Todo todo){
+        todoRepository.remove(todo);
+    }
     public Todo findTodo(Long todoId){
         return todoRepository.findById(todoId);
     }

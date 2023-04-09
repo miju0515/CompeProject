@@ -13,6 +13,10 @@ public class MemoryTodoRepository implements TodoRepository {
         return todo;
     }
 
+    public void remove(Todo todo){
+        store.remove(todo.getId(),todo);
+    }
+
     public Todo findById(Long todoId){
         return store.get(todoId);
     }
