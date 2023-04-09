@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.ofg">
+<head>
+    <meta charset="UTF-8">
+    <title>오늘할일</title>
+</head>
+<body>
+<div class="container">
+    <div>
+        <h2>오늘할일</h2>
+        <div>
+            <table>
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>할일</th>
+                    <th>선호도</th>
+                    <th>우선도</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="todo : ${todos}">
+                    <td th:text="${todo.id}"></td>
+                    <td th:text="${todo.text}"></td>
+                    <td th:text="${todo.preference_point}"></td>
+                    <td th:text="${todo.importance_point}"></td>
+
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

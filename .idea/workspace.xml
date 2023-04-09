@@ -31,6 +31,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
@@ -47,13 +48,23 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
-  <component name="RunManager" selected="JUnit.TodoServiceTest.delete">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\CompeProject\todaytodo\src\main\resources\templates\todo" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.TodaytodoApplication">
     <configuration name="TodoServiceTest.add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="todaytodo.test" />
       <extension name="coverage">
@@ -109,7 +120,7 @@
       <option name="presentableId" value="Default" />
       <updated>1680930160380</updated>
       <workItem from="1680930162195" duration="4673000" />
-      <workItem from="1681016726161" duration="839000" />
+      <workItem from="1681016726161" duration="5670000" />
     </task>
     <servers />
   </component>

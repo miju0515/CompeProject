@@ -2,8 +2,6 @@ package project.todaytodo.todo;
 
 public class Todo {
 
-
-
     private Long id;
     //private Long date;
     private String text;
@@ -11,6 +9,9 @@ public class Todo {
     private int importance_point;
     private boolean done;
 
+    public Todo(){
+
+    }
     public Todo(Long id, String text, int preference_point, int importance_point, boolean done) {
         this.id = id;
         //this.date = date;
