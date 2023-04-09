@@ -4,6 +4,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import project.todaytodo.todo.Todo;
 import project.todaytodo.todo.TodoService;
 import project.todaytodo.todo.TodoServiceImpl;
@@ -33,10 +34,20 @@ public class TodoController {
         return "redirect:/";
     }
 
+    @GetMapping("/todo/delete")
+    public String delete(int id){
+        Long Lid=Long.valueOf(id);
+        Todo todo = todoService.findTodo(Lid);
+        todoService.delete(todo);
+        return "redirect:/todo";
+    }
+
     @GetMapping("/todo")
     public String list(Model model){
         List<Todo> todos= todoService.findAllTodo();
         model.addAttribute("todos",todos);
         return "todo/todolist";
     }
+
+
 }
