@@ -53,7 +53,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
-  <component name="RunManager" selected="JUnit.TodoServiceTest.add">
+  <component name="RunManager" selected="JUnit.TodoServiceTest.delete">
     <configuration name="TodoServiceTest.add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="todaytodo.test" />
       <extension name="coverage">
@@ -70,6 +70,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TodoServiceTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="todaytodo.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="project.todaytodo.todo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="project.todaytodo.todo" />
+      <option name="MAIN_CLASS_NAME" value="project.todaytodo.todo.TodoServiceTest" />
+      <option name="METHOD_NAME" value="delete" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TodaytodoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="todaytodo.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="project.todaytodo.TodaytodoApplication" />
@@ -79,6 +95,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TodoServiceTest.delete" />
         <item itemvalue="JUnit.TodoServiceTest.add" />
       </list>
     </recent_temporary>
@@ -92,7 +109,7 @@
       <option name="presentableId" value="Default" />
       <updated>1680930160380</updated>
       <workItem from="1680930162195" duration="4673000" />
-      <workItem from="1681016726161" duration="355000" />
+      <workItem from="1681016726161" duration="839000" />
     </task>
     <servers />
   </component>

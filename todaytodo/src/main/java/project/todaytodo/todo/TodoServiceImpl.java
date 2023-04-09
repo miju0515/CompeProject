@@ -1,5 +1,7 @@
 package project.todaytodo.todo;
 
+import java.util.List;
+
 public class TodoServiceImpl implements TodoService{
     private final TodoRepository todoRepository = new MemoryTodoRepository();
 
@@ -14,6 +16,10 @@ public class TodoServiceImpl implements TodoService{
         return todoRepository.findById(todoId);
     }
 
+
+    public List findAllTodo(){
+        return todoRepository.findAll();
+    }
 
 
 
