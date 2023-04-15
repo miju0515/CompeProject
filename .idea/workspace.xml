@@ -47,24 +47,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/Users/miju/Documents/GitHub/CompeProject"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\CompeProject\todaytodo\src\main\resources\templates\todo" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.TodaytodoApplication">
+  <component name="RunManager" selected="Application.TodaytodoApplication">
+    <configuration name="TodaytodoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="project.todaytodo.TodaytodoApplication" />
+      <module name="todaytodo.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="project.todaytodo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TodoServiceTest.add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="todaytodo.test" />
       <extension name="coverage">
@@ -106,8 +113,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TodoServiceTest.delete" />
+        <item itemvalue="Application.TodaytodoApplication" />
         <item itemvalue="JUnit.TodoServiceTest.add" />
+        <item itemvalue="JUnit.TodoServiceTest.delete" />
       </list>
     </recent_temporary>
   </component>
