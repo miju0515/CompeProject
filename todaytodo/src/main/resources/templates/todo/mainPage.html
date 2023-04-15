@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.ofg">
+<head>
+    <meta charset="UTF-8">
+    <title>오늘할일</title>
+    <link  th:href="@{/style.css}" rel="stylesheet"/>
+</head>
+<body>
+<div class="container">
+    <div>
+        <div>
+            <h2>오늘할일</h2>
+        </div>
+        <div>
+            <p class="date">날짜</p>
+        </div>
+        <div>
+            <div class="graph"></div>
+            <div class="todolist">
+                <div>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>할일</th>
+                            <th>선호도</th>
+                            <th>우선도</th>
+                            <th>삭제</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr th:each="todo : ${todos}">
+                            <td th:text="${todo.id}"></td>
+                            <td th:text="${todo.text}"></td>
+                            <td th:text="${todo.preference_point}"></td>
+                            <td th:text="${todo.importance_point}"></td>
+                            <td><button><a th:href="@{/todo/delete/(id=${todo.id})}">삭제</a></button></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <form action="/todo/new" method="post">
+                    <div class="todoadd">
+                        <div class="todo_group">
+                            <lable for="text">할일</lable>
+                            <input type="text" name="text" id="text" placeholder="해야할 일을 적어주세요">
+                            <lable for="preference_point">선호도</lable>
+                            <input type="number" min=0 max=5 name="preference_point" id="preference_point" placeholder="선호도를 지정해주세요">
+                            <lable for="importance_point">우선도</lable>
+                            <input type="number" min=0 max=5 name="importance_point" id="importance_point" placeholder="우선도를 지정해주세요">
+                        </div>
+                        <button type="submit">추가하기</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

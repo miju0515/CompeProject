@@ -21,6 +21,11 @@ public class TodoController {
         return "todo/createtodoForm";
     }
 
+    @GetMapping("/todo/group")
+    public String grouppage(){
+        return "todo/mainPage";
+    }
+
 
     @PostMapping("/todo/new")
     public String create(TodoForm form){

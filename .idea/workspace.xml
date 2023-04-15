@@ -31,8 +31,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -47,18 +47,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/Users/miju/Documents/GitHub/CompeProject"
-  }
-}]]></component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\CompeProject\todaytodo\src\main\resources\templates\todo" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TodaytodoApplication">
+  <component name="RunManager" selected="Spring Boot.TodaytodoApplication">
     <configuration name="TodaytodoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="project.todaytodo.TodaytodoApplication" />
       <module name="todaytodo.main" />
@@ -113,7 +115,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TodaytodoApplication" />
         <item itemvalue="JUnit.TodoServiceTest.add" />
         <item itemvalue="JUnit.TodoServiceTest.delete" />
       </list>
@@ -129,6 +130,7 @@
       <updated>1680930160380</updated>
       <workItem from="1680930162195" duration="4673000" />
       <workItem from="1681016726161" duration="12189000" />
+      <workItem from="1681562962528" duration="1829000" />
     </task>
     <servers />
   </component>
