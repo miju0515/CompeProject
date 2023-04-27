@@ -12,6 +12,7 @@
             <table>
                 <thead>
                 <tr>
+                    <th>완료여부</th>
                     <th>#</th>
                     <th>할일</th>
                     <th>선호도</th>
@@ -21,6 +22,9 @@
                 </thead>
                 <tbody>
                 <tr th:each="todo : ${todos}">
+                        <td>
+                            <input type="checkbox" name="done" id="done" th:field="${todo.done}" onclick="checkbox(this)">
+                        </td>
                         <td th:text="${todo.id}"></td>
                         <td th:text="${todo.text}"></td>
                         <td th:text="${todo.preference_point}"></td>
@@ -36,5 +40,10 @@
 
     </div>
 </div>
+<script th:inline="javascript">
+    function checkbox(t){
+
+    }
+</script>
 </body>
 </html>

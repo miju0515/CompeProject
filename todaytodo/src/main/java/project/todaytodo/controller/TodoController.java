@@ -18,7 +18,7 @@ public class TodoController {
 
     @GetMapping("/todo/new")
     public String createForm(){
-        return "todo/createtodoForm";
+        return "todo/mainPage";
     }
 
     @GetMapping("/todo/group")
@@ -36,7 +36,7 @@ public class TodoController {
 
         todoService.add(todo);
 
-        return "redirect:/";
+        return "redirect:/todo/group";
     }
 
     @GetMapping("/todo/delete")
@@ -44,14 +44,14 @@ public class TodoController {
         Long Lid=Long.valueOf(id);
         Todo todo = todoService.findTodo(Lid);
         todoService.delete(todo);
-        return "redirect:/todo";
+        return "redirect:/todo/group";
     }
 
     @GetMapping("/todo")
     public String list(Model model){
         List<Todo> todos= todoService.findAllTodo();
         model.addAttribute("todos",todos);
-        return "todo/todolist";
+        return "todo/mainPage";
     }
 
 

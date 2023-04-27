@@ -3,21 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>오늘할일</title>
-    <link  th:href="@{/style.css}" rel="stylesheet"/>
+    <link  th:href="@{/css/style.css}" rel="stylesheet"/>
 </head>
 <body>
 <div class="container">
     <div>
         <div>
-            <h2>오늘할일</h2>
+            <span id="title">오늘할일</span>
+            <button class="setting"></button>
+        </div>
+        <div class="date_">
+            <span class="date">날짜</span>
         </div>
         <div>
-            <p class="date">날짜</p>
-        </div>
-        <div>
-            <div class="graph"></div>
+            <div class="graph">
+                <div class="graph_child">
+                    <img src="/img/warning.png" alt="" id="warning">
+                </div>
+            </div>
             <div class="todolist">
                 <div>
+                    <div>
+
+                    </div>
                     <table>
                         <thead>
                         <tr>
@@ -42,14 +50,21 @@
                 <form action="/todo/new" method="post">
                     <div class="todoadd">
                         <div class="todo_group">
-                            <lable for="text">할일</lable>
-                            <input type="text" name="text" id="text" placeholder="해야할 일을 적어주세요">
-                            <lable for="preference_point">선호도</lable>
-                            <input type="number" min=0 max=5 name="preference_point" id="preference_point" placeholder="선호도를 지정해주세요">
-                            <lable for="importance_point">우선도</lable>
-                            <input type="number" min=0 max=5 name="importance_point" id="importance_point" placeholder="우선도를 지정해주세요">
+                            <p>
+                                <lable for="preference_point">선호도</lable>
+                                <input type="number" min=0 max=5 name="preference_point" id="preference_point" placeholder="선호도를 지정해주세요">
+                                <lable for="importance_point">우선도</lable>
+                                <input type="number" min=0 max=5 name="importance_point" id="importance_point" placeholder="우선도를 지정해주세요">
+                            </p>
+                            <p>
+                                <lable for="text">할일</lable>
+                                <input type="text" name="text" id="text" placeholder="해야할 일을 적어주세요">
+                            </p>
+
+
+
                         </div>
-                        <button type="submit">추가하기</button>
+                        <button type="submit" id="submit">추가하기</button>
                     </div>
                 </form>
             </div>
@@ -57,5 +72,9 @@
 
     </div>
 </div>
+
+<script>
+
+</script>
 </body>
 </html>

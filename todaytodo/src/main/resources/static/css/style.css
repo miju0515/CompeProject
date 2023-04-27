@@ -1,0 +1,57 @@
+.graph, .todolist{
+    width: 50%;
+}
+
+.graph{
+    float:left;
+}
+.graph_child{
+    width: 500px;
+    height: 500px;
+    background-color: #ACDF87;
+    display: flex;
+    justify-content: center;
+}
+
+#warning{
+    width: 100px;
+    height: 100px;
+    margin-top:40%;
+}
+
+.todolist{
+    float:right;
+}
+
+#title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.date_{
+    display:flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.setting{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border-color:#ACDF87;
+    background-color: #ACDF87;
+    float:right;
+}
+
+#submit{
+    margin: 5px;
+    width: 120px;
+    height: 28px;
+    font-size: 12px;
+    background-color: #76BA1B;
+    color: white;
+    float: right;
+    border:none;
+
+
+}
