@@ -29,6 +29,7 @@
                     <table>
                         <thead>
                         <tr>
+                            <th>완료</th>
                             <th>#</th>
                             <th>할일</th>
                             <th>선호도</th>
@@ -38,6 +39,7 @@
                         </thead>
                         <tbody>
                         <tr th:each="todo : ${todos}">
+                            <td><input type="checkbox" onclick="todoDone(this)"></td>
                             <td th:text="${todo.id}"></td>
                             <td th:text="${todo.text}"></td>
                             <td th:text="${todo.preference_point}"></td>
@@ -74,6 +76,15 @@
 </div>
 
 <script>
+    function todoDone(t){
+        td=t.parentNode;
+        td.style.backgroundColor=(t.checked) ? "#E0E0E0":"#FFFFFF";
+        td.style.textDecoration=(t.checked) ? "line-through":"none";
+        tr=t.parentNode.parentNode;
+        tr.style.backgroundColor=(t.checked) ? "#E0E0E0":"#FFFFFF";
+        tr.style.textDecoration=(t.checked) ? "line-through":"none";
+
+    }
 
 </script>
 </body>

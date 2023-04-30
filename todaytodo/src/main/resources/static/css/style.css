@@ -52,6 +52,10 @@
     color: white;
     float: right;
     border:none;
+}
 
+table,td,tr{
 
+    border: none;
+    padding: 10px;
 }
