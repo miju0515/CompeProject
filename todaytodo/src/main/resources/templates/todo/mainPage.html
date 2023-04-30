@@ -23,13 +23,13 @@
             </div>
             <div class="todolist">
                 <div>
+                    <!--
                     <div >
-                        <select name="" id="sortBox" >
-                            <option th:href="@{/todo/sort/{sortingway}(sortingway=${sortingway},orderby=sortbyId)}" selected>기본</option>
-                            <option th:href="@{/todo/sort/{sortingway}(sortingway=${sortingway},orderby=sortbyImp)}">중요도순</option>
-                            <option th:href="@{/todo/sort/{sortingway}(sortingway=${sortingway},orderby=sortbyPre)}">선호도순</option>
+                        <select th:field="*{sortingway}">
+                            <option th:each="sortingway : ${sortingWays}" th:value="${sortingway.way}" th:text="${sortingway.displayName}">이름</option>
                         </select>
                     </div>
+                    -->
                     <table>
                         <thead>
                         <tr>

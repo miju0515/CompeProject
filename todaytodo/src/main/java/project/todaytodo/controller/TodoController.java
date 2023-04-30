@@ -3,12 +3,15 @@ package project.todaytodo.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import project.todaytodo.todo.SortingWay;
 import project.todaytodo.todo.Todo;
 import project.todaytodo.todo.TodoService;
 import project.todaytodo.todo.TodoServiceImpl;
 
+import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
@@ -34,7 +37,7 @@ public class TodoController {
 //        return "todo/mainPage";
 //    }
 
-
+/*
     @GetMapping("/todo/{sortingway}")
     public String SortingPage(@RequestParam(required = false,defaultValue = "sortbyId") String sortingway,Model model){
         List<Todo> sortTodo = todoService.findAllTodo();
@@ -60,11 +63,10 @@ public class TodoController {
                 }
             });
         }
-
         model.addAttribute("todos",sortTodo);
         return "todo/mainPage";
     }
-
+*/
     @PostMapping("/todo/new")
     public String create(TodoForm form){
         Todo todo = new Todo();
@@ -85,6 +87,15 @@ public class TodoController {
         return "redirect:/todo/group";
     }
 
+    @PostMapping("/todo/sorting")
+    public String sorting(Model model){
+        List<SortingWay> sortingWays=new ArrayList<>();
+        sortingWays.add(new SortingWay("sortbyId","기본"));
+        sortingWays.add(new SortingWay("sortbyImp", "우선도"));
+        sortingWays.add(new SortingWay("sortbyPre","선호도"));
+        model.addAttribute("sortingway",sortingWays);
+        return "redirect:/todo/group";
+    }
 
 
 }

@@ -19,10 +19,11 @@
 
 .todo_group{
     border: 2px #76BA1B solid;
+    padding: 10px;
 }
 
 #text{
-    width: 50px;
+    width: 400px;
 }
 
 
