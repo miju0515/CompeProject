@@ -23,8 +23,12 @@
             </div>
             <div class="todolist">
                 <div>
-                    <div>
-
+                    <div >
+                        <select name="" id="sortBox" >
+                            <option th:href="@{/todo/sort/{sortingway}(sortingway=${sortingway},orderby=sortbyId)}" selected>기본</option>
+                            <option th:href="@{/todo/sort/{sortingway}(sortingway=${sortingway},orderby=sortbyImp)}">중요도순</option>
+                            <option th:href="@{/todo/sort/{sortingway}(sortingway=${sortingway},orderby=sortbyPre)}">선호도순</option>
+                        </select>
                     </div>
                     <table>
                         <thead>
@@ -62,9 +66,6 @@
                                 <lable for="text">할일</lable>
                                 <input type="text" name="text" id="text" placeholder="해야할 일을 적어주세요">
                             </p>
-
-
-
                         </div>
                         <button type="submit" id="submit">추가하기</button>
                     </div>

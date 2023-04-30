@@ -13,6 +13,19 @@
     justify-content: center;
 }
 
+#sortBox{
+    margin-right: 5px;
+}
+
+.todo_group{
+    border: 2px #76BA1B solid;
+}
+
+#text{
+    width: 50px;
+}
+
+
 #warning{
     width: 100px;
     height: 100px;
@@ -54,12 +67,3 @@
     border:none;
 }
 
-table,td,tr{
-    border: none;
-    padding: 10px;
-}
-
-#todotext{
-    width:30px;
-
-}
