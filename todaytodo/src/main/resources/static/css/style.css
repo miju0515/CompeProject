@@ -55,7 +55,11 @@
 }
 
 table,td,tr{
-
     border: none;
     padding: 10px;
+}
+
+#todotext{
+    width:30px;
+
 }

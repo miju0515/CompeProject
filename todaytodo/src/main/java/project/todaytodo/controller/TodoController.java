@@ -22,9 +22,16 @@ public class TodoController {
     }
 
     @GetMapping("/todo/group")
-    public String grouppage(){
+    public String grouppage(Model model){
+        List<Todo> todos= todoService.findAllTodo();
+        model.addAttribute("todos",todos);
         return "todo/mainPage";
     }
+//    public String list(Model model){
+//        List<Todo> todos= todoService.findAllTodo();
+//        model.addAttribute("todos",todos);
+//        return "todo/mainPage";
+//    }
 
 
     @PostMapping("/todo/new")
@@ -47,12 +54,6 @@ public class TodoController {
         return "redirect:/todo/group";
     }
 
-    @GetMapping("/todo")
-    public String list(Model model){
-        List<Todo> todos= todoService.findAllTodo();
-        model.addAttribute("todos",todos);
-        return "todo/mainPage";
-    }
 
 
 }

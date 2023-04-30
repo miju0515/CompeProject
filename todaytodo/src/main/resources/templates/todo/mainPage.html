@@ -40,11 +40,11 @@
                         <tbody>
                         <tr th:each="todo : ${todos}">
                             <td><input type="checkbox" onclick="todoDone(this)"></td>
-                            <td th:text="${todo.id}"></td>
-                            <td th:text="${todo.text}"></td>
-                            <td th:text="${todo.preference_point}"></td>
-                            <td th:text="${todo.importance_point}"></td>
-                            <td><button><a th:href="@{/todo/delete/(id=${todo.id})}">삭제</a></button></td>
+                            <td id="todoid" th:text="${todo.id}"></td>
+                            <td id="todotext" th:text="${todo.text}"></td>
+                            <td id="todopre" th:text="${todo.preference_point}"></td>
+                            <td id="todoimp" th:text="${todo.importance_point}"></td>
+                            <td id="tododel"><button><a th:href="@{/todo/delete/(id=${todo.id})}">삭제</a></button></td>
                         </tr>
                         </tbody>
                     </table>
