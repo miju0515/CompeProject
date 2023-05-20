@@ -13,7 +13,8 @@
             <button class="setting"></button>
         </div>
         <div class="date_">
-            <span class="date">날짜</span>
+            <span id="month"></span>
+            <span id="date"></span>
         </div>
         <div>
             <div class="graph">
@@ -94,6 +95,12 @@
     var graph_=document.getElementById('graph_child');
 
 
+    //날짜
+    let day = new Date();
+    document.getElementById('month').innerHTML = parseInt(day.getMonth()+1)+"월 ";
+    document.getElementById('date').innerHTML = day.getDate()+"일";
+
+    //완료
     function todoDone(t){
         td=t.parentNode;
         td.style.backgroundColor=(t.checked) ? "#E0E0E0":"#FFFFFF";
