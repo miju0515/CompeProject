@@ -5,7 +5,7 @@
 .graph{
     float:left;
 }
-.graph_child{
+#graph_child{
     width: 500px;
     height: 500px;
     background-color: #ACDF87;
@@ -18,7 +18,8 @@
 }
 
 .todo_group{
-    border: 2px #76BA1B solid;
+    border: 4px #76BA1B solid;
+    border-radius: 10px;
     padding: 10px;
 }
 
@@ -68,3 +69,25 @@
     border:none;
 }
 
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,td{
+    text-align: center;
+    padding: 10px;
+    border-bottom: 2px solid #76BA1B;
+}
+
+#th_done,#th_id,#th_delete,#th_imppt,#th_prept{
+    width: 50px;
+}
+
+#del_btn{
+    text-decoration: none;
+    background-color: #76BA1B;
+    color: white;
+    border:none;
+    margin:3px;
+}

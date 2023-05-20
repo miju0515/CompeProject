@@ -54,6 +54,7 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -135,6 +136,9 @@
       <workItem from="1681562962528" duration="6311000" />
       <workItem from="1682586189638" duration="6637000" />
       <workItem from="1682828128964" duration="16801000" />
+      <workItem from="1682925746728" duration="1833000" />
+      <workItem from="1683782750637" duration="94000" />
+      <workItem from="1684569496807" duration="6163000" />
     </task>
     <servers />
   </component>
