@@ -30,7 +30,7 @@
                     <div class="todoadd">
                         <details>
                             <summary>
-                                <p>오늘의 할일</p>
+                                <span>오늘의 할일</span>
                             </summary>
                             <div class="todo_group">
                                 <p>
@@ -129,7 +129,16 @@
         type: "scatter"
     }];
 
-    Plotly.newPlot(graph_,data_graph);
+    var layout={
+        xaxis: {
+            range: [0,5]
+        },
+        yaxis: {
+            range: [0,5]
+        }
+    };
+
+    Plotly.newPlot(graph_,data_graph,layout);
 
 
     function addData(){
@@ -137,7 +146,7 @@
         yArray.push(Math.floor(Math.random()*5));
         console.log(xArray);
         console.log(yArray);
-        Plotly.newPlot(graph_,data_graph);
+        Plotly.newPlot(graph_,data_graph,layout);
     }
 
 </script>

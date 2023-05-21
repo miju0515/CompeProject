@@ -91,3 +91,8 @@ th,td{
     border:none;
     margin:3px;
 }
+
+#month,#date{
+    font-size: 20px;
+    font-weight: bold;
+}
