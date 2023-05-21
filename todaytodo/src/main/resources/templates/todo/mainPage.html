@@ -19,8 +19,11 @@
         <div>
             <div class="graph">
                 <div id="graph_child">
+                    <!--
                     <img src="/img/warning.png" alt="" id="warning">
+                    -->
                 </div>
+                <button onclick="addData()">ADD</button>
             </div>
             <div class="todolist">
                 <form action="/todo/new" method="post">
@@ -32,9 +35,9 @@
                             <div class="todo_group">
                                 <p>
                                     <lable for="preference_point">선호도</lable>
-                                    <input type="number" min=0 max=5 name="preference_point" id="preference_point" placeholder="선호도를 지정해주세요">
+                                    <input type="number" min=0 max=5 name="preference_point" id="preference_point" value="0">
                                     <lable for="importance_point">우선도</lable>
-                                    <input type="number" min=0 max=5 name="importance_point" id="importance_point" placeholder="우선도를 지정해주세요">
+                                    <input type="number" min=0 max=5 name="importance_point" id="importance_point" value="0">
                                 </p>
                                 <p>
                                     <lable for="text">할일</lable>
@@ -92,13 +95,13 @@
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <script>
 
-    var graph_=document.getElementById('graph_child');
+
 
 
     //날짜
     let day = new Date();
-    document.getElementById('month').innerHTML = parseInt(day.getMonth()+1)+"월 ";
-    document.getElementById('date').innerHTML = day.getDate()+"일";
+    document.getElementById('month').innerHTML = parseInt(day.getMonth()+1)+"월";
+    document.getElementById('date').innerHTML = " "+day.getDate()+"일";
 
     //완료
     function todoDone(t){
@@ -109,6 +112,32 @@
         tr.style.backgroundColor=(t.checked) ? "#E0E0E0":"#FFFFFF";
         tr.style.textDecoration=(t.checked) ? "line-through":"none";
 
+    }
+
+    //그래프
+    var graph_=document.getElementById('graph_child');
+    var xArray = [3,3,3];
+    var yArray = [1,2,3];
+    var data_graph = [{
+        x: xArray,
+        y: yArray,
+        mode: "markers",
+        marker:{
+            size:12,
+            color:"#76BA1B"
+        },
+        type: "scatter"
+    }];
+
+    Plotly.newPlot(graph_,data_graph);
+
+
+    function addData(){
+        xArray.push(Math.floor(Math.random()*5));
+        yArray.push(Math.floor(Math.random()*5));
+        console.log(xArray);
+        console.log(yArray);
+        Plotly.newPlot(graph_,data_graph);
     }
 
 </script>
