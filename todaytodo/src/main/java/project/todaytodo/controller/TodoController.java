@@ -1,5 +1,6 @@
 package project.todaytodo.controller;
 
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -86,16 +87,26 @@ public class TodoController {
         todoService.delete(todo);
         return "redirect:/todo/group";
     }
-
+/*
     @PostMapping("/todo/sorting")
     public String sorting(Model model){
         List<SortingWay> sortingWays=new ArrayList<>();
         sortingWays.add(new SortingWay("sortbyId","기본"));
         sortingWays.add(new SortingWay("sortbyImp", "우선도"));
         sortingWays.add(new SortingWay("sortbyPre","선호도"));
+        /*String howtosort=null;
+        List<Todo> sortingTodo = new ArrayList<>();
+        if(howtosort.equals("sortbyId")){
+            sortingTodo=todoService.findAllTodo(Sort.by(Sort.Direction.ASC),"id");
+        }else if(howtosort.equals("sortbyImp")){
+            sortingTodo=todoService.findAllTodo(Sort.by(Sort.Direction.ASC),"importance_pt");
+        }else if(howtosort.equals("sortbyPre")){
+            sortingTodo=todoService.findAllTodo(Sort.by(Sort.Direction.ASC),"preference_pt");
+        }
+
         model.addAttribute("sortingway",sortingWays);
         return "redirect:/todo/group";
-    }
+    }*/
 
 
 }

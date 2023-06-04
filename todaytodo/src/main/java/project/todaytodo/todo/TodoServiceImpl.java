@@ -1,5 +1,7 @@
 package project.todaytodo.todo;
 
+import org.springframework.data.domain.Sort;
+
 import java.util.List;
 
 public class TodoServiceImpl implements TodoService{
@@ -21,8 +23,10 @@ public class TodoServiceImpl implements TodoService{
         return todoRepository.findAll();
     }
 
-
-
+    @Override
+    public List<Todo> findAllTodo(Sort by, String id) {
+        return null;
+    }
 
 
 }

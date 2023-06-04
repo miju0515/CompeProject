@@ -1,8 +1,20 @@
 package project.todaytodo.todo;
 
+import lombok.Getter;
+import lombok.Setter;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
+
 public class Todo {
 
+    @Id
+    @GeneratedValue
     private Long id;
+
     //private Long date;
     private String text;
     private int preference_point;
