@@ -1,19 +1,13 @@
 package project.todaytodo.controller;
 
-import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import project.todaytodo.todo.SortingWay;
 import project.todaytodo.todo.Todo;
 import project.todaytodo.todo.TodoService;
 import project.todaytodo.todo.TodoServiceImpl;
 
-import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 
 @Controller
