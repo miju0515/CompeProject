@@ -5,17 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9778acf-0fe5-40d9-bcbf-20566823865c" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/todaytodo/src/main/resources/application-aws.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/todaytodo/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todaytodo/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/todaytodo/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todaytodo/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/todaytodo/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todaytodo/src/main/java/project/todaytodo/controller/TodoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/todaytodo/src/main/java/project/todaytodo/controller/TodoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todaytodo/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,6 +176,7 @@
       <workItem from="1692783470212" duration="120000" />
       <workItem from="1692859189233" duration="2203000" />
       <workItem from="1692870190963" duration="157000" />
+      <workItem from="1694327736254" duration="1782000" />
     </task>
     <servers />
   </component>
