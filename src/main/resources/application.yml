@@ -3,4 +3,9 @@ spring:
   config:
     import: application-aws.yml
 
+jpa:
+  show-sql: true
+  hibernate:
+    ddl-auto: create
+
 
